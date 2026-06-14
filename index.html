@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pro Tic Tac Toe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-gamepad"></i>
+        TicTacPro
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Professional Tic Tac Toe</h1>
+    <p>
+        Challenge your friends or play against AI.
+        Get three in a row to win.
+    </p>
+</section>
+
+<!-- GAME -->
+
+<section id="game" class="game-section">
+
+    <div class="controls">
+
+        <select id="mode">
+            <option value="pvp">Player vs Player</option>
+            <option value="ai">Player vs AI</option>
+        </select>
+
+        <button id="resetBtn">
+            Reset Game
+        </button>
+
+    </div>
+
+    <div class="scoreboard">
+
+        <div class="score-card">
+            X Wins
+            <span id="xScore">0</span>
+        </div>
+
+        <div class="score-card">
+            O Wins
+            <span id="oScore">0</span>
+        </div>
+
+        <div class="score-card">
+            Draws
+            <span id="drawScore">0</span>
+        </div>
+
+    </div>
+
+    <div class="status" id="status">
+        Player X Turn
+    </div>
+
+    <div class="board" id="board">
+
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+
+    </div>
+
+    <button id="newMatch">
+        New Match
+    </button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About This Game</h2>
+
+<p>
+This professional Tic Tac Toe application is built using
+HTML, CSS and JavaScript. It includes AI gameplay,
+responsive design and modern UI effects.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+<div class="footer-content">
+
+<h3>TicTacPro</h3>
+
+<p>Professional Gaming Experience</p>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 TicTacPro. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
